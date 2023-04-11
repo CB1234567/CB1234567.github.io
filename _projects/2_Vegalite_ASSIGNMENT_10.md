@@ -49,6 +49,6 @@ As we can see there is almost a parabolic curve like relationship between swuare
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/CB1234567/CB1234567.github.io/blob/main/Beri_Chetna_ASSIGNMENT_10.ipynb" text="The Analysis" %}
 </div>
 
