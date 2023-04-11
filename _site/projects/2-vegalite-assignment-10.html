@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ASSIGNMENT 10">
+  <meta property="og:description" content="This is Assignment 10 which uses vega-lite and Altair for interactivity.">
+  <meta property="og:image" content="assets/pngs/cars.png">
+
+  <title>ASSIGNMENT 10</title>
+  <meta name="description" content="This is Assignment 10 which uses vega-lite and Altair for interactivity.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>IS445 Jekyll Template</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="homework---10-group---36">Homework - 10, Group - 36</h1>
+<h2 id="team-member">Team Member:</h2>
+<h4 id="chetna-beri">Chetna Beri</h4>
+
+<h4 id="in-this-assignment-we-have-learnt-to-use-vegalite-python-and-altair-for-plots-i-have-made-use-of-the-same-dataset-as-assignment-9-it-has-certain-information-about-buildings-like-the-year-of-construction-and-number-of-rooms-floors-etc-i-have-constructed-two-visualizations-using-this-data-the-first-visualization-makes-use-of-tooltip-and-the-third-one-makes-use-of-dropdown-menu-to-select-the-year-whose-data-needs-to-be-displayed-i-have-tried-to-make-the-data-as-simple-and-understandable-as-possible-as-i-believe-that-simple-visualizations-make-good-visualizations">In this assignment we have learnt to use Vegalite, Python and Altair for plots. I have made use of the same dataset as Assignment 9. It has certain information about Buildings, like the year of construction and number of rooms, floors etc. I have constructed two visualizations using this data. The first visualization makes use of tooltip and the third one makes use of dropdown menu to select the year whose data needs to be displayed. I have tried to make the data as simple and understandable as possible as I believe that simple visualizations make good visualizations.</h4>
+
+<h1 id="visualization-1">Visualization 1</h1>
+<h2 id="understanding-the-relationship-of-square-footage-and-total-floors">Understanding the relationship of square footage and Total floors.</h2>
+<p>Through this graph I have tried to understnad the relationship between the square footage and total number of floors in the building. It can be observed that major data lies between 0 to 300,000. This is quite possible as it is rarer to find buildings with larger houses especially in citites. We cannot derive any direct relationship between swuare footage and floors. Data seems to be arbitarily distributed and does not follow any sort of fixed pattern.</p>
+
+<p>I have made use of the tooltip here and the graph changes color on being clicked for tootltip. The second graph is more interactive. The color changing ability is made possible using colormap.I have made use of the .properties function to set width and height of the map. I have also made use of brush selector and x and y flatten transform. The color encoding changes the g=color from green to blue on being selected. The <strong>from_dict()</strong> function helps us use our own data.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/Chart1.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+</code></pre></div></div>
+
+<vegachart schema-url="/assets/json/Chart1.json" style="width: 100%"></vegachart>
+
+<h1 id="visualization-2">Visualization 2</h1>
+<h2 id="understanding-the-relationship-of-square-footage-and-year-constructed">Understanding the relationship of square footage and Year Constructed.</h2>
+<p>Through this graph I have tried to understnad the relationship between the square footage and the year in which the building was constructed. I have used .properties and <strong>select_box</strong> tool for selecting dates froma dropdown menu. The <strong>.properties</strong> allows me to set the size of the graph. I have also used <strong>tooltip and color encoding</strong> to denote changes in color when graph is selected. This graph is truly interactive. I really enjoyed making this graph as it was challenging and exciting to learn something new and execute it. I have performed sum aggregation in order to display the sum of square foots along the year. I have used a horizontal bar chart for this graph.</p>
+
+<p>As we can see there is almost a parabolic curve like relationship between swuare footage and years constructed. As the years increase the quarefootage increased and then led to a gentle fall in the square footage as well. The last part of the fall can also be due to lack to data in the recet years and plenty of descriptive data in the previous historical years.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;vegachart schema-url="/assets/json/Chart2.json" style="width: 100%"&gt;&lt;/vegachart&gt;
+</code></pre></div></div>
+
+<vegachart schema-url="/assets/json/Chart2.json" style="width: 100%"></vegachart>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+  The Analysis
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Chetna Beri</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/CB1234567"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
