@@ -12,7 +12,7 @@ custom_js:
 # Light, Camera, Location aanndd....Action!!
 ## Final Project Part 3.1, Group - 07
 ### An interactive analysis of shooting locations in New York City. 
-## Team Memberc: 
+## Team Members: 
 #### Chetna Beri
 #### Aatmic Tiwari
 #### Sankalp Jain
