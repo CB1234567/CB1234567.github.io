@@ -64,7 +64,7 @@ Overall, the use of data from the Film Permits dataset has allowed us to build p
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://nbviewer.org/github/CB1234567/CB1234567.github.io/blob/master/Group_7_Final_Project_Part3.1.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://nbviewer.org/github/CB1234567/CB1234567.github.io/blob/main/Group_7_Final_Project_Part3.1.ipynb" text="The Analysis" %}
 </div>
 
 <div class="centre">
