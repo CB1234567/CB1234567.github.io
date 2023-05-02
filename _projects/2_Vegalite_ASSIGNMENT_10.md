@@ -52,5 +52,5 @@ As we can see there is almost a parabolic curve like relationship between swuare
 {% include elements/button.html link="https://github.com/CB1234567/CB1234567.github.io/blob/main/Beri_Chetna_ASSIGNMENT_10.ipynb" text="The Analysis" %}
 </div>
 
-[1] {{ site.url }}/assets/def.txt
+[1] ({{ site.url }}/assets/def.txt)
 
