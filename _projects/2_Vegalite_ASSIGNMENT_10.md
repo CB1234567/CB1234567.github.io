@@ -28,7 +28,7 @@ I have made use of the tooltip here and the graph changes color on being clicked
 <vegachart schema-url="{{ site.baseurl }}/assets/json/Chart1.json" style="width: 100%"></vegachart>
 ```
 
-<vegachart schema-url="{{ site.baseurl }}/assets/def.txt" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/Chart1.json" style="width: 100%"></vegachart>
 
 # Visualization 2
 ## Understanding the relationship of square footage and Year Constructed.
@@ -51,4 +51,6 @@ As we can see there is almost a parabolic curve like relationship between swuare
 <div class="right">
 {% include elements/button.html link="https://github.com/CB1234567/CB1234567.github.io/blob/main/Beri_Chetna_ASSIGNMENT_10.ipynb" text="The Analysis" %}
 </div>
+
+[1] {{ site.url }}/assets/def.txt
 
