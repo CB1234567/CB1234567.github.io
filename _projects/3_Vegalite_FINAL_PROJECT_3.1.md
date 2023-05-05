@@ -34,7 +34,7 @@ This data can be useful in a variety of ways, such as helping production compani
 The given contextual data (Link: https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx) is a more in-depth form of the data we use in our project. As we mentioned, we are using that data in which different types of events are being listed and which area exactly they have to hold the parking, do barricading or provide police enforcement. But, this contextual data considers only circumstances involving more than one street for the event and those that will continue for at least five days and few other countries like Canada,UK are also being involved in this. This will give more insights into those spots which are being used more frequently and are the most popular spots as compared to New York City with specific boroughs.
 
 
-#  Visualization 2: Analysis from Contextual Data
+#  Visualization 2 and 3: Analysis from Contextual Data
 ## Understanding the dataset by performing primary analysis and plots.
 Our initial analysis started with understanding the spread of data within the columns for the contextual and original datasets. In this section we have explored contextual dataset analysis. In the previous assignment we have worked on the main dataset. This meant that we plotted simple yet effective bar plots using python libraries like seaborn and matplotlib. From this we understood that sports and youth events are highest with respect to event type and a number of other events are lowest. The data is found to be consistent as both the category column and the sub-category column seem to follow a similar pattern. We have eventually dropped the Country column as over 95% of the columns belong to same country. Furthermore, we have analyzed Borough data using stacked barcharts. We have found that Staten Island and Manhattan have the lowest and highest number of shooting permits being granted and seem to be popular locations among movie makers. This leads us to believe that perhaps Manhattan is more familiar to audiences as compared to Staten Island which doesn seem to be the obvious choice for filmmakers. Brooklyn at number feels like a popular choice because of obvious landmarks like the Brooklyn bridge which we see in a lot of movies and TV series. It is also a lot cheaper than NYC Central like Manhattan and Times Square. We do not have ample data to support us for Times Square and Central Park and hope that in future the government presents us with the opportunity to analyze this by making the data public.
 
@@ -64,7 +64,15 @@ Overall, the use of data from the Film Permits dataset has allowed us to build p
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://nbviewer.org/github/CB1234567/CB1234567.github.io/blob/main/Group_7_Final_Project_Part3.1.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/CB1234567/CB1234567.github.io/blob/main/Group_7_Final_Project_Part3.1.ipynb" text="Visualizaion 1 Code and Analysis" %}
+</div>
+
+<div class="left">
+{% include elements/button.html link="https://github.com/CB1234567/CB1234567.github.io/blob/main/Group_7_Final_Project_Part3.1_2.ipynb" text="Visualizaion 2 Code and Analysis" %}
+</div>
+
+<div class="right">
+{% include elements/button.html link="https://github.com/CB1234567/CB1234567.github.io/blob/main/Group_7_Final_Project_Part3.1_3.ipynb" text="Visualizaion 3 Code and  Analysis" %}
 </div>
 
 <div class="centre">
